@@ -35,7 +35,7 @@ abstract contract ERC20 is IERC20 {
     _decimals = decimals_;
     _totalSupply = totalSupply_;
     _founder = founder_;
-    _balances[_founder] = totalSupply_;
+    _balances[_founder] = totalSupply_ * (10 ** uint256(decimals_);
   }
 
   // View functions
